@@ -5,92 +5,95 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="./css/style.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/media.css">
 	<title>Bestseller</title>
 </head>
 <body>
 	<div class="wrapper">
-		<div class="slider">
-			<div class="main-img">
-				<img src="./images/slider-item1.jpg" alt="" class="main-picture">
-				<button class="slider-next slider-btn"></button>
-				<button class="slider-previous slider-btn"></button>
-			</div>
-			<div class="mini-items">
-				<img src="./images/mini-item1.jpg" alt="slider-img1">
-				<img src="./images/mini-item2.jpg" alt="slider-img2">
-				<img src="./images/mini-item3.jpg" alt="slider-img3">
-				<img src="./images/mini-item4.jpg" alt="slider-img4">
-				<img src="./images/mini-item5.jpg" alt="slider-img5">
-			</div>
-		</div>
-
-		<div class="descrip">
-			<div class="header">
-				<h2 class="head-subtitle">Bestseller</h2>
-				<h1 class="head-title">Apple iPhone X</h1>
-				<div class="head-info">
-					<div class="rating">
-						<div class="rating__stars">
-							<div class="rating__stars-fill" style="width: 89.5%"></div>
-						</div>
-						<span class="rating-count">14</span>
-					</div>
-					<div class="art">арт.12345</div>
+		<div class="product">
+			<div class="slider">
+				<div class="main-img">
+					<img src="./images/slider-item1.jpg" alt="" class="main-picture">
+					<button class="slider-next slider-btn"></button>
+					<button class="slider-previous slider-btn"></button>
+				</div>
+				<div class="mini-items">
+					<img src="./images/mini-item1.jpg" alt="slider-img1">
+					<img src="./images/mini-item2.jpg" alt="slider-img2">
+					<img src="./images/mini-item3.jpg" alt="slider-img3">
+					<img src="./images/mini-item4.jpg" alt="slider-img4">
+					<img src="./images/mini-item5.jpg" alt="slider-img5">
 				</div>
 			</div>
-			<div class="text">The Greeks, who were the first to explore geography as both art and science, achieved this through Cartography, Philosophy, and Literature, or through Mathematics. There is The Greeks, who were the first to explore geography as both art and science, achieved this through Cartography, Philosophy, and Literature, or through Mathematics. There is
-			</div>
-
-			<div class="container">
-				<form action="">
-					<div class="form-container">
-						<label for="color">Color</label>
-						<select name="" id="color">
-							<option selected value="orange">оранжевый</option>
-							<option value="red">красный</option>
-							<option value="green">зеленый</option>
-							<option value="blue">синий</option>
-							<option value="yellow">желтый</option>
-						</select>
-					</div>
-					<div class="form-container">
-						<label for="memory">Capacity</label>
-						<select name="" id="memory">
-							<option selected value="64">64 Gb</option>
-							<option value="128">128 Gb</option>
-							<option value="256">256 Gb</option>
-							<option value="512">512 Gb</option>
-							<option value="">1024 Gb</option>
-						</select>
-					</div>
-					<div class="form-container">
-						<label for="quantity">Quantity</label>
-						<select name="" id="quantity">
-							<option selected value="1">1</option>
-							<option value="2">2</option>
-						</select>
-						<span class="available">2 available</span>
-					</div>
-				</form>
-				
-					<span class="in-stock">В наличии</span>
-					<div class="bue-info">
-						<div class="price">
-							<div class="new-price">$1,090</div>
-							<div class="old-price">$1,190</div>
+	
+			<div class="descrip">
+				<div class="header">
+					<h2 class="head-subtitle">Bestseller</h2>
+					<h1 class="head-title">Apple iPhone X</h1>
+					<div class="head-info">
+						<div class="rating">
+							<div class="rating__stars">
+								<div class="rating__stars-fill" style="width: 89.5%"></div>
+							</div>
+							<span class="rating-count">14</span>
 						</div>
-						<div class="info-btn">
-							<button class="like-btn"></button>
-							<button class="schedule-btn"></button>
-						</div>
+						<div class="art">арт.12345</div>
 					</div>
-				<div class="order-btn">
-					<button class="bue-click">Купить в 1 клик</button>
-					<button class="add-click">Добавить в корзину</button>
 				</div>
+				<div class="text">The Greeks, who were the first to explore geography as both art and science, achieved this through Cartography, Philosophy, and Literature, or through Mathematics. There is The Greeks, who were the first to explore geography as both art and science, achieved this through Cartography, Philosophy, and Literature, or through Mathematics. There is
+				</div>
+	
+				<div class="container">
+					<form action="">
+						<div class="form-container">
+							<label for="color">Color</label>
+							<select name="" id="color">
+								<option selected value="orange">оранжевый</option>
+								<option value="red">красный</option>
+								<option value="green">зеленый</option>
+								<option value="blue">синий</option>
+								<option value="yellow">желтый</option>
+							</select>
+						</div>
+						<div class="form-container">
+							<label for="memory">Capacity</label>
+							<select name="" id="memory">
+								<option selected value="64">64 Gb</option>
+								<option value="128">128 Gb</option>
+								<option value="256">256 Gb</option>
+								<option value="512">512 Gb</option>
+								<option value="">1024 Gb</option>
+							</select>
+						</div>
+						<div class="form-container">
+							<label for="quantity">Quantity</label>
+							<select name="" id="quantity">
+								<option selected value="1">1</option>
+								<option value="2">2</option>
+							</select>
+							<span class="available">2 available</span>
+						</div>
+					</form>
+					
+						<span class="in-stock">В наличии</span>
+						<div class="bue-info">
+							<div class="price">
+								<div class="new-price">$1,090</div>
+								<div class="old-price">$1,190</div>
+							</div>
+							<div class="info-btn">
+								<button class="like-btn"></button>
+								<button class="schedule-btn"></button>
+							</div>
+						</div>
+					<div class="order-btn">
+						<button class="bue-click">Купить в 1 клик</button>
+						<button class="add-click"><span class="add-click-span">Добавить в корзину</span></button>
+					</div>
+				</div>
+	
 			</div>
-
 		</div>
 	</div>
 
