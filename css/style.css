@@ -12,6 +12,7 @@
 body {
 	background-color: #fff;
 	font-family: 'Roboto', sans-serif;
+	font-size: 14px;
 }
 
 img {
@@ -31,16 +32,19 @@ button:hover {
 }
 
 .wrapper {
+	width: 1200px;
+	height: 900px;
 	background-color: #E5E5E5;
-	width: 945px;
-	margin: 100px auto;
-	font-size: 14px;
+	margin: 0 auto;
+	padding-top: 90px;
 }
 
 .product {
 	background-color: #fff;
+	width: 945px;
 	display: flex; 
 	justify-content: space-between;
+	margin: 0 auto;
 }
 
 .slider {
@@ -80,6 +84,10 @@ button:hover {
 .mini-items {
 	display: flex;
 	justify-content: space-between;
+}
+
+.slider-mini-item {
+	display: block;
 }
 
 .header {
@@ -142,7 +150,7 @@ button:hover {
 }
 
 .text {
-	padding: 26px 20px 99px 20px;
+	padding: 20px 20px 103px 20px;
 	border-bottom: var(--border-bottom-style);
 	line-height: 20px;
 	color: var(--text-color);
