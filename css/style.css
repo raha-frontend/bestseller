@@ -4,6 +4,13 @@
 	box-sizing: border-box;
 }
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
 :root {
 	--text-color: rgba(40, 47, 54, 0.8);
 	--border-bottom-style: 1.5px solid rgba(40, 47, 54, 0.07);
@@ -33,7 +40,7 @@ button:hover {
 
 .wrapper {
 	width: 1200px;
-	height: 900px;
+	height: 800px;
 	background-color: #E5E5E5;
 	margin: 0 auto;
 	padding-top: 90px;
@@ -48,10 +55,8 @@ button:hover {
 }
 
 .slider {
-	min-width: 554px;
-}
-
-.main-img {
+	width: 554px;
+	height: 596px;
 	position: relative;
 }
 
@@ -79,15 +84,7 @@ button:hover {
 
 .main-picture {
 	display: block;
-}
-
-.mini-items {
-	display: flex;
-	justify-content: space-between;
-}
-
-.slider-mini-item {
-	display: block;
+	width: 100%;
 }
 
 .header {
@@ -150,18 +147,18 @@ button:hover {
 }
 
 .text {
-	padding: 20px 20px 103px 20px;
+	padding: 15px 20px 15px 20px;
 	border-bottom: var(--border-bottom-style);
 	line-height: 20px;
 	color: var(--text-color);
 }
 
 .container {
-	padding: 20px;
+	padding: 15px 20px;
 }
 
 form {
-	margin-bottom: 20px;
+	margin-bottom: 15px;
 	border-bottom: var(--border-bottom-style);
 }
 
@@ -195,9 +192,44 @@ select {
 	margin-left: 20px;
 }
 
-#quantity {
+.counter {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	width: 106px;
+	height: 30px;
 	margin: 0 13px 0 23px;
+	border: 1px solid rgba(40, 47, 54, 0.15);
+	border-radius: 5px;
+}
+
+.counter__btn {
+	border: none;
+	background-color: transparent;
+	width: 35px;
+	height: 100%;
+	color: rgba(40, 47, 54, 0.3);
+	font-size: 17px;
+}
+
+.counter__field {
+	text-align: center;
+	border: none;
+	width: 35px;
+	height: 100%;
+	-webkit-appearance: value;
+   -moz-appearance:    value;
+   appearance:         value;
+}
+
+.counter__minus {
+	text-align: right;
+	padding-right: 5px;
+}
+
+.counter__plus {
+	text-align: left;
+	padding-left: 5px;
 }
 
 .available {
@@ -225,7 +257,7 @@ select {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	margin: 8px 0 20px 0;
+	margin: 8px 0 19px 0;
 }
 
 .price {
